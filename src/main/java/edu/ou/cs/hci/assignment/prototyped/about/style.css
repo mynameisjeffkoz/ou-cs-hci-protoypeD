@@ -7,10 +7,9 @@
 
 body
 {
-    background-color: #fcfada;
-    color: #841617;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
 }
 
 /******************************************************************************/

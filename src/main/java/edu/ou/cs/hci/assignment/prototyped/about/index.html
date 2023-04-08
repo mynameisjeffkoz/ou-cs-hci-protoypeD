@@ -9,25 +9,86 @@
 
 <html>
 
-  <head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-  </head>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+  <style>
+      .logoPanel {
+      text-align: center;
+      font-size: 22px;
+      font-family: georgia;
+      font-style: normal;
+      font-variant: small-caps;
+      font-weight: bold;
+      margin: auto;
+      }
+      .tagline {
+      text-align: center;
+      font-size: 14px;
+      font-style: oblique;
+      font-family: helvetica;
+      margin: auto;
+      color: gray;
+      }
+      .appInfo {
+      font-family: georgia;
+      text-align: center;
+      font-size: 14px;
+      }
+      .teamInfo {
+      display: flex;
+      font-family: georgia;
+      justify-content: center;
+      align-items: left;
+      font-size: 14px;
+      line-height: 40px;
+      height: 40px;
+      }
+      . licenseInfo {
+      display: flex;
+      font-family: georgia;
+      justify-content: center;
+      align-items: left;
+      font-size: 14px;
+      line-height: 30px;
+      height: 30px;
 
-  <body>
+    </style>
+</head>
 
-    <div style="font-weight: bold;">
-      This is my app.
-    </div>
-
-    <div style="font-style: italic;">
-      There are many like it, but this one is mine.
-    </div>
-
-  </body>
+<body>
+<div class="logoPanel">
+  <img src="https://obsproject.com/assets/images/new_icon_small-r.png" alt="Logo"
+       width="80"
+       height="80">
+  <br>
+  MovieStor Pro
+</div>
+<div class="tagline">
+  The best application for storing all your movie data
+</div>
+<br>
+<div class="appInfo">
+  <a href="https://obsproject.com/">https://obsproject.com/</a>
+  <br>
+  V 29.0.2
+</div>
+<div class="teamInfo">
+  <a href="https://github.com/obsproject/obs-studio">
+    <img src="https://obsproject.com/assets/images/Github.svg" alt="team"
+         width="40"
+         height="40"> </a>
+  <a href="https://github.com/obsproject/obs-studio">OBS Team</a>
+</div>
+<div class="licenseInfo">
+  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+    <img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL V3 License"
+         height="30"
+         width="auto"></a>
+  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">https://www.gnu.org/licenses/gpl-3.0.en.html</a>
+</div>
+</body>
 
 </html>
-
-<!----------------------------------------------------------------------------->
