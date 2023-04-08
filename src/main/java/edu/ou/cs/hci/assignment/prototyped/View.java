@@ -49,7 +49,6 @@ public final class View
 	private static final double	SCENE_W = 960;		// Scene width
 	private static final double	SCENE_H = 540;		// Scene height
 
-	// TODO #3: Adjust w and h to match your About Pane from Design D
 	private static final double	ABOUT_W = 400;		// About Pane width
 	private static final double	ABOUT_H = 300;		// About Pane height
 
@@ -191,8 +190,7 @@ public final class View
 		BorderPane	pane = new BorderPane(webView, null, null,
 										  aboutStageCloseButton, null);
 
-		// TODO #4: Change the pane background color to match your about page.
-		pane.setStyle("-fx-background-color: #ffffff;");
+		pane.setStyle("-fx-background-color: gainsboro;");
 
 		Scene		scene = new Scene(pane, ABOUT_W, ABOUT_H);
 
