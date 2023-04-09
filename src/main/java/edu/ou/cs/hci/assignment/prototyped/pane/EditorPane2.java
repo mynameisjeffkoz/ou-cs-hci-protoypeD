@@ -556,12 +556,12 @@ public final class EditorPane2 extends AbstractPane
 		Label lAwards = new Label("Awards");
 
 		lAwards.setFont(FONT_LABEL);
-		lAwards.relocate(316, 78);
+		lAwards.relocate(350, 78);
 
-		cAwardPicture.relocate(316,93);
-		cAwardDirecting.relocate(316,114);
-		cAwardCinematography.relocate(316, 135);
-		cAwardActing.relocate(316,156);
+		cAwardPicture.relocate(350,93);
+		cAwardDirecting.relocate(350,114);
+		cAwardCinematography.relocate(350, 135);
+		cAwardActing.relocate(350,156);
 
 		// Average score widgets
 
@@ -586,10 +586,10 @@ public final class EditorPane2 extends AbstractPane
 		Label lGenre = new Label("Genres");
 
 		lGenre.setFont(FONT_LABEL);
-		lGenre.relocate(449,78);
+		lGenre.relocate(500,78);
 
 		for(int i = 0; i < cGenres.size(); i++) {
-			cGenres.get(i).relocate(449,93 + 21 * i);
+			cGenres.get(i).relocate(500,93 + 21 * i);
 		}
 
 		// Summary widgets
@@ -597,7 +597,7 @@ public final class EditorPane2 extends AbstractPane
 		Label lSummary = new Label("Summary");
 
 		lSummary.setFont(FONT_LABEL);
-		lSummary.relocate(10, 130);
+		lSummary.relocate(10, 136);
 
 		cSummary.setPrefWidth(286);
 		cSummary.setPrefHeight(161);
@@ -605,9 +605,9 @@ public final class EditorPane2 extends AbstractPane
 
 		// Animated / Color widget
 
-		cIsAnimated.relocate(165,130);
+		cIsAnimated.relocate(165,122);
 
-		cIsColor.relocate(242,130);
+		cIsColor.relocate(242,122);
 
 		// Comments widgets
 
