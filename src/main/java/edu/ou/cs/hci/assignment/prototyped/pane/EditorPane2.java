@@ -508,18 +508,136 @@ public final class EditorPane2 extends AbstractPane
 		// Create a parent pane to contain all widgets, labels, decorations
 		Pane	pane = new Pane();
 
-		// Example 1: Create and position a Label for the cTitle TextField
+		// Create and position a Label for the cTitle TextField
 		Label	lTitle = new Label("Title");
 
 		lTitle.setFont(FONT_LABEL);
 		lTitle.relocate(10, 10);
 
-		// Example 2: Position the cTitle TextField itself
+		// Position the cTitle TextField itself
 		cTitle.relocate(10, 25);
-		cTitle.setPrefWidth(251);
+		cTitle.setPrefWidth(286);
+
+		// Year widgets
+		Label lYear = new Label("Year");
+
+		lYear.setFont(FONT_LABEL);
+		lYear.relocate(316, 10);
+
+		cYear.relocate(316,25);
+
+		// Rating widgets
+		Label lRating = new Label("Rating");
+
+		lRating.setFont(FONT_LABEL);
+		lRating.relocate(407,10);
+
+		cRating.relocate(407,25);
+
+		// Runtime widgets
+		Label lRuntime = new Label("Runtime");
+
+		lRuntime.setFont(FONT_LABEL);
+		lRuntime.relocate(506,10);
+
+		cRuntime.relocate(506,25);
+
+		// Director widgets
+		Label lDirector = new Label("Director");
+
+		lDirector.setFont(FONT_LABEL);
+		lDirector.relocate(10, 70);
+
+		cDirector.setPrefWidth(286);
+		cDirector.relocate(10,85);
+
+		// Award widgets
+
+		Label lAwards = new Label("Awards");
+
+		lAwards.setFont(FONT_LABEL);
+		lAwards.relocate(316, 78);
+
+		cAwardPicture.relocate(316,93);
+		cAwardDirecting.relocate(316,114);
+		cAwardCinematography.relocate(316, 135);
+		cAwardActing.relocate(316,156);
+
+		// Average score widgets
+
+		Label lScore = new Label("Average Score");
+
+		lScore.setFont(FONT_LABEL);
+		lScore.relocate(316,197);
+
+		cAverageReviewScore.relocate(316,212);
+
+		// Num reviews widgets
+
+		Label lNumReviews = new Label("Number of Reviews");
+
+		lNumReviews.setFont(FONT_LABEL);
+		lNumReviews.relocate(316,257);
+
+		cNumberOfReviews.relocate(316,272);
+
+		// Genre widgets
+
+		Label lGenre = new Label("Genres");
+
+		lGenre.setFont(FONT_LABEL);
+		lGenre.relocate(449,78);
+
+		for(int i = 0; i < cGenres.size(); i++) {
+			cGenres.get(i).relocate(449,93 + 21 * i);
+		}
+
+		// Summary widgets
+
+		Label lSummary = new Label("Summary");
+
+		lSummary.setFont(FONT_LABEL);
+		lSummary.relocate(10, 130);
+
+		cSummary.setPrefWidth(286);
+		cSummary.setPrefHeight(161);
+		cSummary.relocate(10, 151);
+
+		// Animated / Color widget
+
+		cIsAnimated.relocate(165,130);
+
+		cIsColor.relocate(242,130);
+
+		// Comments widgets
+
+		Label lComments = new Label("Comments");
+
+		lComments.setFont(FONT_LABEL);
+		lComments.relocate(10, 332);
+
+		cComments.relocate(10,347);
+		cComments.setPrefWidth(636);
+		cComments.setPrefHeight(161);
+
+		// Poster widgets
+
+		cImageView.setImage(null);
+		cImageView.relocate(668, 35);
+		cImageView.prefWidth(200);
+		cImageView.prefHeight(600);
+
+		cImageFile.relocate(666,483);
+
+		cImageButton.relocate(886,483);
 
 		// Add all of the widgets, labels, decoration nodes, etc. to the pane
-		pane.getChildren().addAll(lTitle, cTitle);
+		pane.getChildren().addAll(lTitle, cTitle, lYear, cYear, lRating, cRating, lRuntime, cRuntime, lDirector,
+				cDirector, lAwards, cAwardPicture, cAwardDirecting, cAwardCinematography, cAwardActing, lScore,
+				cAverageReviewScore, lNumReviews, cNumberOfReviews, lGenre, lSummary, cSummary, cIsAnimated,
+				cIsColor, lComments, cComments, cImageView, cImageFile, cImageButton);
+		pane.getChildren().addAll(cGenres);
+
 
 		// Return the parent pane as the "root" of the EditorPane2 layout
 		return pane;
